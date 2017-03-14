@@ -1,0 +1,164 @@
+ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed,
+figure, figcaption, footer, ul, li header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+h2 {
+  line-height: 27px; }
+
+h4 {
+  margin-top: 0px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none;
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Slider */
+.viewport {
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+  height: 400px;
+  overflow: hidden;
+  background-color: #fff;
+  /* transition et effects 3d*/ }
+  .viewport ul {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    perspective: 200px;
+    perspective-origin: 50% 25%;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    juistify-content: space-around;
+    align-items: baseline; }
+    .viewport ul li {
+      order: 1;
+      position: absolute;
+      list-style-type: none;
+      background-color: #fff;
+      width: 500px;
+      height: 281px;
+      padding: 0;
+      margin: 0;
+      transition-delay: 100ms;
+      transition: all 200ms ease-in-out; }
+      .viewport ul li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+        text-align: center;
+        background-color: white;
+        color: #444;
+        cursor: pointer;
+        transition: all 200ms ease-in-out; }
+        .viewport ul li span img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute; }
+        .viewport ul li span h2 {
+          padding-top: 40px;
+          margin: 0 !important;
+          position: relative;
+          font-size: 28px;
+          color: white; }
+        .viewport ul li span .overview {
+          color: white;
+          height: 56px;
+          width: 481px;
+          font-size: 17px;
+          margin: 80px 0px 0 11px;
+          position: relative; }
+        .viewport ul li span .stars {
+          position: absolute;
+          bottom: 0; }
+          .viewport ul li span .stars .starResiz {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            display: inline-block; }
+  .viewport ul li:nth-child(1),
+  .viewport ul li:nth-child(7) {
+    display: block;
+    z-index: 20;
+    transform: scale(0.45, 0.6) translate3d(-740px, 50px, 8px) rotateY(15deg);
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.4); }
+  .viewport ul li:nth-child(7) {
+    transform: scale(0.45, 0.6) translate3d(740px, 50px, 8px) rotateY(-15deg); }
+  .viewport ul li:nth-child(1) span,
+  .viewport ul li:nth-child(7) span {
+    opacity: .25; }
+  .viewport ul li:nth-child(2),
+  .viewport ul li:nth-child(6) {
+    display: block;
+    z-index: 40;
+    transform: scale(0.35, 0.6) translate3d(-640px, 50px, 8px) rotateY(10deg);
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.4); }
+  .viewport ul li:nth-child(6) {
+    transform: scale(0.35, 0.6) translate3d(640px, 50px, 8px) rotateY(-10deg); }
+  .viewport ul li:nth-child(2) span,
+  .viewport ul li:nth-child(6) span {
+    opacity: .5; }
+  .viewport ul li:nth-child(3),
+  .viewport ul li:nth-child(5) {
+    display: block;
+    z-index: 60;
+    transform: scale(0.5, 0.7) translate3d(-300px, 45px, 16px) rotateY(5deg);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3); }
+  .viewport ul li:nth-child(5) {
+    transform: scale(0.5, 0.7) translate3d(300px, 45px, 16px) rotateY(-5deg); }
+  .viewport ul li:nth-child(3) span,
+  .viewport ul li:nth-child(5) span {
+    opacity: .75; }
+  .viewport ul li:nth-child(4) {
+    display: block;
+    z-index: 80;
+    transform: translate3d(0, 40px, 20px);
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.2); }
+  .viewport ul li:nth-child(4) span {
+    opacity: 1; }
+
+.buttons {
+  width: 245px;
+  margin: 20px auto; }
+  .buttons button {
+    border: 0;
+    margin: 0;
+    text-align: center;
+    padding: 2em; }
+  .buttons #left img, .buttons #right img {
+    height: 50px; }
